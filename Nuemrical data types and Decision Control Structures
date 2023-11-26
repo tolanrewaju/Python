@@ -1,0 +1,43 @@
+# Part 1:Calculate area of the rectangle using the formula: area = length * width.
+# Get the length and width from the user
+length = float(input("Enter the length of the rectangle: "))
+width = float(input("Enter the width of the rectangle: "))
+
+# Calculate the area of the rectangle
+area = length * width
+
+# Display the result
+print(f"The area of the rectangle with length {length} and width {width} is {area}")
+
+
+# Part 2: Takes the user's name as input. Greets the user with a personalized message including their name.
+# Get the user's name as input
+user_name = input("Enter your name: ")
+
+# Greet the user with a personalized message
+print(f"Hello, {user_name}! Welcome to our city.")
+
+
+# Part 3: Program that converts temperature from Celsius to Fahrenheit:
+# Get the temperature in Celsius from the user
+celsius = float(input("Enter the temperature in Celsius: "))
+
+# Convert Celsius to Fahrenheit
+fahrenheit = (celsius * 9/5) + 32
+
+# Display the converted temperature
+print(f"{celsius} °C is equal to {fahrenheit} °F.")
+
+
+# Part 4: Converts time in seconds to hours, minutes, and remaining seconds:
+# Get the time in seconds from the user
+seconds = int(input("Enter the time in seconds: "))
+
+# Calculate hours, minutes, and remaining seconds
+hours = seconds // 3600
+minutes = (seconds % 3600) // 60
+seconds = seconds % 60
+
+# Display the converted time in the requested format
+formatted_time = "{:02d} hours, {:02d} minutes, {:02d} seconds".format(hours, minutes, seconds)
+print("Converted time:", formatted_time)
